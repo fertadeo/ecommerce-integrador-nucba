@@ -28,7 +28,8 @@
     align-items: center;
     justify-content: space-between;
     background-color: #F5F5F5;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
     font-family: RecoletaFont, sans-serif;
     padding-left: 2%;
     padding-right: 2%;
@@ -64,39 +65,85 @@
     background-size: cover;
     
     background-repeat: no-repeat;
-    background-color: #2F3C42;
+    background-color: #DDEBEE;
     background-image: url(./img/record-player-4994400_1920.jpg);
     background-position: right;
 
 }
 
 .hero-title h1{ 
-    color: #F5F5F5;
+    /* color: #9f0606; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
     font-family: RecoletaFont, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    background-color: #252b2e;
+    color: white;
+    height: 10%;
     
 }
 
 .products {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(25rem,1fr));
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
+    height: auto;
     background-color: #DDEBEE;
-    border: 2px solid blue;
-    padding: 5%;
+    /* border: 2px solid blue; */
+    justify-content: center;
+    align-items: center;
 
 }
 
 .card {
- width: 20vw;
+ width: 22vw;
  height: 50vh;
- border: #2F3C42 2px solid;
- filter: drop-shadow(0 0 0.75rem #2F3C42);
- 
-
+ display: flex;
+ flex-direction: column;
+ border: #2F3C42 1px solid;
+ border-radius: 5px;
+ filter: box-shadow(0 0 0.75rem #2F3C42);
+ margin-left: 20%;
+ overflow-x: hidden;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 5% ;
+ padding: 10px;
 }
 
 img {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;   
+    object-fit: cover;
 }
+
+.card p { 
+    font-size: 1.1rem;
+    font-family: RecoletaFont, sans-serif;
+}
+
+.card button {
+    border: none;
+    background-color: #0152B8;
+    border-radius: 5px;
+    padding: 5px;
+    color: #F5F5F5;
+}
+
+.card .disc1 { grid-area: 1 / 1 / 2 / 2; }
+.card .disc2 { grid-area: 1 / 2 / 2 / 3; }
+.card .disc3 { grid-area: 1 / 3 / 2 / 4; }
+.card .disc4 { grid-area: 2 / 1 / 3 / 2; }
+.card .disc5 { grid-area: 2 / 2 / 3 / 3; }
+.card .disc6 { grid-area: 2 / 3 / 3 / 4; }
+.card .disc7 { grid-area: 3 / 1 / 4 / 2; }
+.card .disc8 { grid-area: 3 / 2 / 4 / 3; }
+.card .disc9 { grid-area: 3 / 3 / 4 / 4; }
+
+
