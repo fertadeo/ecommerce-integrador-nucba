@@ -94,7 +94,7 @@
     padding: 20px;
     width: 100vw;
     height: auto;
-    background-color: #DDEBEE;
+    background-color:  #F5F5F5;
     /* border: 2px solid blue; */
     justify-content: center;
     align-items: center;
@@ -132,8 +132,9 @@ img {
     border: none;
     background-color: #0152B8;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     color: #F5F5F5;
+    cursor: pointer;
 }
 
 .card .disc1 { grid-area: 1 / 1 / 2 / 2; }
@@ -147,3 +148,56 @@ img {
 .card .disc9 { grid-area: 3 / 3 / 4 / 4; }
 
 
+.form-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    padding: 8%;
+    /* border: solid 2px red; */
+    background-color:  #333640;
+    background-image: './img/portrait.jpg';
+
+}
+.form {
+    /* border: #0152B8 2px solid; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.form{
+    font-family: RecoletaFont, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.input1{border-radius: 5px;}
+.input2{
+    /* border: red solid 2px; */
+    width: auto;
+    height: 20vh;
+    border-radius: 5px;
+
+}
+.title-container{
+    font-family: RecoletaFont, sans-serif;
+    color: white;
+    font-size: 3rem;
+    /* border: #0152B8 2px solid; */
+}
+/* .bg-container{
+    border: 2px solid green;
+    width: 100%;
+    height: 40%;
+    background-image: url('./img/bg-discs.jpg');
+    background-position: 1%;
+    object-fit: fill;
+
+} */
